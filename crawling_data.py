@@ -73,5 +73,5 @@ if __name__ == "__main__":
 			data_content = pd.concat([data_content, _results], ignore_index=True)
 	data_content.columns = ['ticker','company_name','address','phone_number','licence_number','legal_representative',
 	'publisher','report','control_status','trading_status','first_trading','capital','volume_share','volume_trading']
-	#data_content.to_csv('data_upcom.csv',encoding='utf-8')
+	data_content.to_csv('data_upcom.csv',encoding='utf-8')
 	print(data_content)
