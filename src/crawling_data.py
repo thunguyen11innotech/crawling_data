@@ -34,14 +34,14 @@ ONE_MINUTES = 60
 @sleep_and_retry
 @limits(calls=30, period=ONE_MINUTES)
 
-def ticker_information(ticker):
+def ticker_information(ticker: str) -> str:
     """_summary_
 
     Args:
-        ticker (string): ticker of company is collected information
+        ticker (string): ticker of company will be collected information
 
     Returns:
-        data (DataFrame): 
+        data (DataFrame): dataframe contains information of ticker. 
     """
     sticker_test = (
         "https://hnx.vn/cophieu-etfs/chi-tiet-chung-khoan-uc-%s.html?_des_tab=1"
